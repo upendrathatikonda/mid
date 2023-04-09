@@ -16,6 +16,12 @@
                         $("#coap").fadeToggle();
                     });
                 });
+                $(function(){
+                    $(".cd").click(function(){
+                        $("#phase").fadeToggle();
+                        $("#inputbuffer").fadeToggle();
+                    });
+                });
 
                 $(function(){
                     $("#iotdef").click(function(){
@@ -40,6 +46,18 @@
                 $(function(){
                     $("#coap").click(function(){
                         $(".para5").fadeToggle();
+                    });
+                });
+
+                $(function(){
+                    $("#inputbuffer").click(function(){
+                        $(".para7").fadeToggle();
+                    });
+                });
+
+                $(function(){
+                    $("#phase").click(function(){
+                        $(".para6").fadeToggle();
                     });
                 });
     </script>
