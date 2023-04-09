@@ -1,0 +1,312 @@
+<html>
+    <head>
+        <title>
+            mid1
+        </title>
+        <link rel="stylesheet" href="midcss.css">
+        <script src="jquery-3.6.0.min.js"></script>
+    </head>
+    <script>
+          $(function(){
+                    $(".iot").click(function(){
+                        $("#iotdef").fadeToggle();
+                        $("#physicaldesign").fadeToggle();
+                        $("#sensors").fadeToggle();
+                        $("#mqtt").fadeToggle();
+                        $("#coap").fadeToggle();
+                    });
+                });
+
+                $(function(){
+                    $("#iotdef").click(function(){
+                        $(".para1").fadeToggle();
+                    });
+                });
+                $(function(){
+                    $("#physicaldesign").click(function(){
+                        $(".para2").fadeToggle();
+                    });
+                });
+                $(function(){
+                    $("#sensors").click(function(){
+                        $(".para3").fadeToggle();
+                    });
+                });
+                $(function(){
+                    $("#mqtt").click(function(){
+                        $(".para4").fadeToggle();
+                    });
+                });
+                $(function(){
+                    $("#coap").click(function(){
+                        $(".para5").fadeToggle();
+                    });
+                });
+    </script>
+    <body>
+        <div class="fullpage">
+            <div class="iot">
+        <h1>
+            IOT 
+        </h1>
+        </div>
+        <div class="midiot">
+        <div class="sub-heading"id="iotdef">
+        <h2>
+            IOT DEFINITION
+        </h2>
+        </div>
+        <div class="para1">
+        <p>
+            The Internet of Things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet. 
+
+        </p>
+        </div>
+        <div class="sub-heading"id="physicaldesign">
+            <h2>
+            PHYSICAL DESIGN OF IOT
+        </h2>
+        </div>
+        <div class="para2">
+            <p>
+                The physical design of an IoT system is referred to as the Things/Devices and protocols that are used to build an IoT system. All these things/Devices are called Node Devices and every device has a unique identity that performs remote sensing, actuating, and monitoring work. and the protocols that are used to establish communication between the Node devices and servers over the internet.
+            </p>
+            <h3>
+                Things/Devices
+            </h3>
+            <p>
+                Things/Devices are used to build a connection, process data, provide interfaces, provide storage, and provide graphics interfaces in an IoT system. All these generate data in a form that can be analyzed by an analytical system and program to perform operations and used to improve the system. 
+
+for example temperature sensor that is used to analyze the temperature generates the data from a location and is then determined by algorithms.
+                <img src="https://1.bp.blogspot.com/-PaDoquzETRU/YCESKL3w9wI/AAAAAAAAADE/8kXEpuvZGBkc9Q1XMck91-9s5xdlyLZswCNcBGAsYHQ/w640-h346/physical-design-of-iot-things.png" caption="devices in IoT(Internet of things)">
+                <h3>Connectivity</h3>
+Devices like USB hosts and ETHERNET are used for connectivity between the devices and the server.
+<h3>
+Processor
+</h3>
+A processor like a CPU and other units are used to process the data. these data are further used to improve the decision quality of an IoT system.
+<h3>
+Audio/Video Interfaces
+</h3>
+An interface like HDMI and RCA devices is used to record audio and videos in a system.
+<h3>Input/Output interface
+</h3>
+    To give input and output signals to sensors, and actuators we use things like UART, SPI, CAN, etc.
+<h3>
+Storage Interfaces
+</h3>
+Things like SD, MMC, and SDIO are used to store the data generated from an IoT device.
+<p>
+Other things like DDR and GPU are used to control the activity of an IoT system.
+   </p>         
+</p>
+<h3>
+    IoT Protocols
+</h3>
+<p>
+    These protocols are used to establish communication between a node device and a server over the internet. it helps to send commands to an IoT device and receive data from an IoT device over the internet. we use different types of protocols that are present on both the server and client side and these protocols are managed by network layers like application, transport, network, and link layer.</p>
+    <img src="https://1.bp.blogspot.com/-9ymOjrDg_2A/YCEVLHuIA2I/AAAAAAAAADQ/fSsZUJw1qIwgJEUGRvYvCarra-oX75tqwCNcBGAsYHQ/w400-h281/physical-design-of-iot-protocols.png">
+<h3>Application Layer protocol</h3><p>
+In this layer, protocols define how the data can be sent over the network with the lower layer protocols using the application interface. these protocols include HTTP, WebSocket, XMPP, MQTT, DDS, and AMQP protocols.
+</p><h3>
+HTTP</h3><p>
+Hypertext transfer protocol is a protocol that presents an application layer for transmitting media documents. it is used to communicate between web browsers and servers. it makes a request to a server and then waits till it receives a response and in between the request server does not keep any data between the two requests. 
+</p><h3>
+WebSocket</h3><p>
+This protocol enables two-way communication between a client and a host that can be run on an untrusted code in a controlled environment. This protocol is commonly used by web browsers.
+</p><h3>
+MQTT</h3><p>
+It is a machine-to-machine connectivity protocol that was designed as a publish/subscribe messaging transport. and it is used for remote locations where a small code footprint is required.
+</p><h3>
+Transport Layer</h3><p>
+This layer is used to control the flow of data segments and handle error control. also, these layer protocols provide end-to-end message transfer capability independent of the underlying network.
+</p><h3>
+TCP</h3><p>
+The transmission control protocol is a protocol that defines how to establish and maintain a network that can exchange data in a proper manner using the internet protocol.
+</p><h3>
+    UDP</h3><p>
+a user datagram protocol is part of an internet protocol called the connectionless protocol. this protocol is not required to establish the connection to transfer data.
+</p><h3>
+Network Layer</h3><p>This layer is used to send datagrams from the source network to the destination network. we use IPv4 and IPv6 protocols as host identification that transfers data in packets.
+</p><h3>
+    IPv4</h3><p>
+This is a protocol address that is a unique and numerical label assigned to each device connected to the network. an IP address performs two main functions host and location addressing. IPv4 is an IP address that is 32-bit long.
+</p><h3>
+IPv6</h3><p>
+It is a successor of IPv4 that uses 128 bits for an IP address. it is developed by the IETF task force to deal with long-anticipated problems.
+</p><h3>
+Link Layer</h3><p>Link-layer protocols are used to send data over the network’s physical layer. it also determines how the packets are coded and signaled by the devices.
+</p><h3>
+Ethernet
+</h3><p>
+It is a set of technologies and protocols that are used primarily in LANs. it defines the physical layer and the medium access control for wired ethernet networks.
+</p><h3>
+    WiFi</h3>
+    <p>
+It is a set of LAN protocols and specifies the set of media access control and physical layer protocols for implementing wireless local area networks.</p>
+        </div>
+        <div class="sub-heading"id="sensors">
+            <h2>
+                Sensors&Actuators
+            </h2>
+        </div>
+        <div class="para3">
+            <h3>What are IoT Sensors? </h3></br>
+            <p>IoT sensors are pieces of hardware that detect changes in an environment and collect data. They’re the pieces of an IoT ecosystem that bridge the digital world to the physical world. IoT sensors may detect things like temperature, pressure, and motion, and if they are connected to a network, they share data with the network. </p>
+            <h3>14 Types of IoT Sensors</h3>
+            <p>There are many different types of sensors, and they come in different shapes and sizes. Here are 14 of the most common types and uses of sensors.</p>
+            <ul>
+           <li> <b>1. Temperature Sensors</b></li>
+           <li><b>2. Proximity Sensors</b></li>
+            <li><b>3. Pressure Sensors</b></li>
+            <li><b>4. Water Quality Sensors</b></li>
+            <li><b>5. Chemical and Gas Sensors</b></li>
+            <li><b>6. Infrared Sensors</b></li>
+            <li><b>7. Smoke Sensors</b></li>
+            <li><b>8. Motion Sensors</b></li>
+            <li><b>9. Level Sensors</b></li>
+            <li><b>10. Image Sensors</b></li>
+            <li><b>11. Humidity Sensors</b></li>
+            <li><b>12. Accelerometer Sensors</b></li>
+            <li><b>13. Gyroscope Sensors</b></li>
+            <li><b>14. Optical Sensors</b></li></ul>
+            <h3>
+                what are actuators in IOT
+            </h3>
+            <p>An actuator is a device that converts energy into motion. It does this by taking an electrical signal and combining it with an energy source. In an IoT system, the actuator can act on data collected by sensors to create an outcome as determined by the chosen settings of the user.</p>
+            </div>
+       <div class="sub-heading"id="mqtt">
+        <h2>
+            MQTT
+        </h2>
+       </div>
+       <div class="para4">
+        <p>
+            MQTT (MQ Telemetry Transport) is a lightweight open messaging protocol that provides resource-constrained network clients with a simple way to distribute telemetry information in low-bandwidth environments. The protocol, which employs a publish/subscribe communication pattern, is used for machine-to-machine (M2M) communication.
+        </p>
+        <h3>
+            MQTT Architecture
+        </h3>
+        <img src="https://static.javatpoint.com/tutorial/computer-network/images/mqtt-protocol3.png" alt="Architecture">
+        <p>
+            To understand the MQTT architecture, we first look at the components of the MQTT.
+        </p>
+        <ul>
+            <li>Message</li>
+            <li>Client</li>
+            <li>Server or Broker</li>
+            <li>Topic</li>
+        </ul>
+       </div> 
+       <div class="sub-heading"id="coap">
+        <h3>
+            CoAP
+        </h3>
+       </div>    
+       <div class="para5">
+        <p>CoAP a customary client-server IoT protocol. It enables clients to make requests for web transfers as per the need of the hour. On the other hand, it also let supporting servers to respond to arriving requests. In summary, devices’ nodes in the IoT ecosystem are enabled to interact over through CoAP only.</p>
+        <br>
+        <p>CoAP and HTTP follow the same working procedure. However, CoAP attains its functionality via asynchronous transactions (using UDP). It utilizes the POST, GET, PUT, and DELETE calls. </p>
+        <br>
+        <h4>Layers in CoAP</h4>
+        <p>there are two different layers :</p>
+        <ul>
+            <li>Request/Response</li>
+            <li>Message</li>
+        </ul>
+        <img src="https://miro.medium.com/v2/resize:fit:640/0*P-Yb4ZnauPOeoEnt">
+        <p>In this above diagram you can see there are two different layers that make CoAp protocol:Message and Request/Response.The Message layer deals with UDP and with asynchronous messages. The Request/Response layer manages request/response interaction based on request/response messages.</p>
+       <p>CoAP Protocol supports four different message types:</p>
+       <ul>
+        <li>Confirmable</li>
+        <li>Non-confirmable</li>
+        <li>Acknowledgment</li>
+        <li>Reset</li>
+       </ul> 
+       </div>
+        </div>
+        </div>
+
+
+<div class="fullpage">
+    <div class="cd">
+        <h1>CD</h1>
+    </div>
+    <div id="phase">
+        <h2>1.Explain the phase of a compiler with block diagram.</h2>
+    </div>
+    <div class="para6">
+        <p><b>Ans:</b>A compiler operates in phases. A phase is a logically interrelated operation that takes source program in one representation and produces output in another representation. The phases of a compiler are shown in below:</p>
+        <p><b>1.Analysis phase</b>breaks up the source program into constituent pieces and creates an intermediate representation of the source program. Analysis of source program includes: lexical analysis, syntax analysis and semantic analysis.</p>
+        <p><b>2.Synthasis phase</b>construct the desired target program from the intermediate representation. The synthesis part of compiler consists of the following phases: Intermediate code generation, Code optimization and Target code generation</p>
+        <img src="https://tse3.mm.bing.net/th?id=OIP.Aph6qOTNg7DdjF8OH4RH0QHaGO&pid=Api&P=0" alt="compiler diagram">
+        <p><b>1.Lexical Analysis</b><br>In this phase, lexical analyzer reads the source program and returns the tokens of the source program. Token is a sequence of characters that can be treated as a single logical entity (such as identifier, operators, keywords, constants etc.).
+            <br>Example:<br>
+                Input String: c = a + b * 3<br>
+                Tokens: id1 = id2 + id3 * 3<br>
+            </p>
+            <p><b>2.syntax Analysis</b>In this phase, the syntax analyzer takes the token produced by lexical analyzer as input and generates a parse tree as output. In syntax analysis phase, the parser checks that the expression made by the token is syntactically correct or not, according to the rules that define the syntax of the source language.
+                Example:<br>
+                <img src="https://static.javatpoint.com/compiler/images/compiler-phases1.png"></p>
+            <p><b>3.semantic Analysis</b>In this phase, the semantic analyzer checks the source program for semantic errors and collects the type information for the code generation. Semantic analyzer checks whether they form a sensible set of instructions in the programming language or not. Type-checking is an important part of semantic analyzer.
+                Example:
+                </p>
+                <p><b>4.Intermediate Code Generator</b>If the program syntactically and semantically correct then intermediate code generator generates a simple machine independent intermediate language. The intermediate code should be generated in such a way that it can easily translated into the target machine code.
+                    <br>Example:<br>
+                        t1 = 3.0;<br>
+                        t2 = id3 * t1;<br>
+                        t3 = id2 + t2;<br>
+                        id1 = t3;
+                    </p>
+            <p><b>5.Code optimization</b>It is used to improve the intermediate code so that the output of the program could run faster and takes less space. It removes the unnecessary lines of the code and arranges the sequence of statements in order to speed up the program execution without wasting resources.
+                <br>Example:<br>
+                    t2 = id3 * 3.0;<br>
+                    id1 = id2 + t2;<br>
+                </p>
+                <p><b>6.Code Generation</b>Code generation is the final stage of the compilation process. It takes the optimized intermediate code as input and maps it to the target machine language.
+                  <br>  Example:
+                      <br>  MOV  R1, id3
+                       <br> MUL  R1, #3.0
+                       <br>MOV  R2, id2
+                        <br>ADD  R1, R2
+                        <br>MOV  id1, R1
+                    </p>
+                    <h3>Symbol Table</h3>
+                    <p>Symbol tables are data structures that are used by compilers to hold information about source-program constructs. The information is collected incrementally by the  analysis phase of compiler and used by the synthesis phases to generate the target code. Entries in the symbol table contain information about an identifier such as its type, its position in storage, and any other relevant information.</p>
+                    <h3>Error Handling</h3>
+                    <p>Whenever an error is encountered during the compilation of the source program, an error handler is invoked. Error handler generates a suitable error reporting message regarding the error encountered.</p>
+    </div>
+    <div id="inputbuffer">
+        <h2>
+            2.Define token, pattern and lexeme with suitable example. How input buffering can be implemented for scanner, Explain?
+        </h2>
+    </div>
+    <div class="para7">
+        <p><b>Token:</b><br> is a sequence of characters that can be treated as a single logical entity. For example, Identifiers, Keywords, Operators, Constants etc.
+           <br><b>Pattern:</b><br>
+            A set of string in the input for which the same token is produced as output. This set of string is described by a rule called a pattern associated with the token. For example, “a letter followed by zero or more letters, digits, or underscores.”
+            <br><b>Lexeme:</b><br>
+            A lexeme is a sequence of characters in the source program that is matched by the pattern for a token.
+            <br><b>Input Buffering:</b><br>
+            Lexical analysis needs to look ahead several characters before a match can be announced. We have two buffer input scheme that is useful when look ahead is necessary.
+            </p>
+            <p>The lexical analyzer scans the input from left to right one character at a time. It uses two pointers begin ptr(bp) and forward ptr(fp) to keep track of the pointer of the input scanned. </p>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190401013238/Untitled-Diagram-211.png" >
+            <h4>Initial Configuration</h4>
+            <p>Initially both the pointers point to the first character of the input string as</p>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190401013001/Untitled-Diagram-115.png">
+            <h4>input buffering</h4>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190401013638/Untitled-Diagram-36.png">
+            <b>1.One Buffer Scheme</b><p>: In this scheme, only one buffer is used to store the input string but the problem with this scheme is that if lexeme is very long then it crosses the buffer boundary, to scan rest of the lexeme the buffer has to be refilled, that makes overwriting the first of lexeme.</p>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190401012723/Untitled-Diagram12.png">
+            <br>
+            <p>
+            <b>2.Two Buffer Scheme:</b>
+                o overcome the problem of one buffer scheme, in this method two buffers are used to store the input string. the first buffer and second buffer are scanned alternately. when end of current buffer is reached the other buffer is filled. the only problem with this method is that if length of the lexeme is longer than length of the buffer then scanning input cannot be scanned completely. Initially both the bp and fp are pointing to the first character of first buffer. Then the fp moves towards right in search of end of lexeme. as soon as blank character is recognized, the string between bp and fp is identified as corresponding token. to identify, the boundary of first buffer end of buffer character should be placed at the end first buffer. Similarly end of second buffer is also recognized by the end of buffer mark present at the end of second buffer. when fp encounters first eof, then one can recognize end of first buffer and hence filling up second buffer is started. in the same way when second eof is obtained then it indicates of second buffer. alternatively both the buffers can be filled up until end of the input program and stream of tokens is identified. This eof character introduced at the end is calling Sentinel which is used to identify the end of buffer.
+            </p>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190401014427/Untitled-Diagram-43.png">
+
+        </div>
+</div>
+    </body>
+</html>
