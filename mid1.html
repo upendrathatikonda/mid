@@ -24,6 +24,15 @@
                 });
 
                 $(function(){
+                    $(".ml").click(function(){
+                        $("#bias").fadeToggle();
+                        $("#roc").fadeToggle();
+                        $("#overfitting").fadeToggle();
+                        $("#underfitting").fadeToggle();
+                    });
+                });
+
+                $(function(){
                     $("#iotdef").click(function(){
                         $(".para1").fadeToggle();
                     });
@@ -58,6 +67,30 @@
                 $(function(){
                     $("#phase").click(function(){
                         $(".para6").fadeToggle();
+                    });
+                });
+
+                $(function(){
+                    $("#bias").click(function(){
+                        $(".para11").fadeToggle();
+                    });
+                });
+
+                $(function(){
+                    $("#underfitting").click(function(){
+                        $(".para10").fadeToggle();
+                    });
+                });
+
+                $(function(){
+                    $("#overfitting").click(function(){
+                        $(".para9").fadeToggle();
+                    });
+                });
+
+                $(function(){
+                    $("#roc").click(function(){
+                        $(".para8").fadeToggle();
                     });
                 });
     </script>
@@ -320,11 +353,88 @@ It is a set of LAN protocols and specifies the set of media access control and p
             <br>
             <p>
             <b>2.Two Buffer Scheme:</b>
-                o overcome the problem of one buffer scheme, in this method two buffers are used to store the input string. the first buffer and second buffer are scanned alternately. when end of current buffer is reached the other buffer is filled. the only problem with this method is that if length of the lexeme is longer than length of the buffer then scanning input cannot be scanned completely. Initially both the bp and fp are pointing to the first character of first buffer. Then the fp moves towards right in search of end of lexeme. as soon as blank character is recognized, the string between bp and fp is identified as corresponding token. to identify, the boundary of first buffer end of buffer character should be placed at the end first buffer. Similarly end of second buffer is also recognized by the end of buffer mark present at the end of second buffer. when fp encounters first eof, then one can recognize end of first buffer and hence filling up second buffer is started. in the same way when second eof is obtained then it indicates of second buffer. alternatively both the buffers can be filled up until end of the input program and stream of tokens is identified. This eof character introduced at the end is calling Sentinel which is used to identify the end of buffer.
+                To overcome the problem of one buffer scheme, in this method two buffers are used to store the input string. the first buffer and second buffer are scanned alternately. when end of current buffer is reached the other buffer is filled. the only problem with this method is that if length of the lexeme is longer than length of the buffer then scanning input cannot be scanned completely. Initially both the bp and fp are pointing to the first character of first buffer. Then the fp moves towards right in search of end of lexeme. as soon as blank character is recognized, the string between bp and fp is identified as corresponding token. to identify, the boundary of first buffer end of buffer character should be placed at the end first buffer. Similarly end of second buffer is also recognized by the end of buffer mark present at the end of second buffer. when fp encounters first eof, then one can recognize end of first buffer and hence filling up second buffer is started. in the same way when second eof is obtained then it indicates of second buffer. alternatively both the buffers can be filled up until end of the input program and stream of tokens is identified. This eof character introduced at the end is calling Sentinel which is used to identify the end of buffer.
             </p>
             <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190401014427/Untitled-Diagram-43.png">
-
         </div>
+</div>
+<div class="fullpage">
+    <div class="ml">
+        <h1>
+            ML
+        </h1>
+    </div>
+    <div id="roc">
+        <h2>ROC CURVE</h2>
+    </div>
+    <div class="para8">
+        <p>A ROC (which stands for “receiver operating characteristic”) curve is a graph that shows a classification model performance at all classification thresholds. It is a probability curve that plots two parameters, the True Positive Rate (TPR) against the False Positive Rate (FPR), at different threshold values and separates a so-called ‘signal’ from the ‘noise.</p>
+        <h3>How to Create a ROC Curve:</h3>
+        <p>Once we’ve fit a logistic regression model, we can use the model to classify observations into one of two categories.</p><br><br>
+        <p>For example, we might classify observations as either “positive” or “negative.”</p><br><br>
+        <p>The true positive rate represents the proportion of observations that are predicted to be positive when indeed they are positive.</p><br><br>
+        <p>Conversely, the false positive rate represents the proportion of observations that are predicted to be positive when they’re actually negative.</p><br><br>
+        <p>When we create a ROC curve, we plot pairs of the true positive rate vs. the false positive rate for every possible decision threshold of a logistic regression model.</p><br><br>
+        
+    </div>
+    <div id="overfitting">
+        <h2>Overfitting</h2>
+    </div>
+    <div class="para9">
+        <p>Overfitting occurs when our machine learning model tries to cover all the data points or more than the required data points present in the given dataset. Because of this, the model starts caching noise and inaccurate values present in the dataset, and all these factors reduce the efficiency and accuracy of the model. The overfitted model has low bias and high variance.</p>
+        <br><br><p>The chances of occurrence of overfitting increase as much we provide training to our model. It means the more we train our model, the more chances of occurring the overfitted model.</p>
+        <i>example:</i><p>The concept of the overfitting can be understood by the below graph of the linear regression output:</p>
+        <img src="https://static.javatpoint.com/tutorial/machine-learning/images/overfitting-and-underfitting.png">
+        <p>As we can see from the above graph, the model tries to cover all the data points present in the scatter plot. It may look efficient, but in reality, it is not so. Because the goal of the regression model to find the best fit line, but here we have not got any best fit, so, it will generate the prediction errors.</p>
+        <h3>How to avoid the Overfitting in Model</h3>
+        <p>Both overfitting and underfitting cause the degraded performance of the machine learning model. But the main cause is overfitting, so there are some ways by which we can reduce the occurrence of overfitting in our model.</p>
+        <ul>
+            <li>Cross-validation</li>
+            <li>Training with more data</li>
+            <li>Removing features</li>
+            <li>Early stopping the training</li>
+            <li>Regularization</li>
+            <li>Ensembling</li>
+        </ul>
+    </div>
+    <div id="underfitting">
+        <h2>Underfitting</h2>
+    </div>
+    <div class="para10">
+        <p>Underfitting occurs when our machine learning model is not able to capture the underlying trend of the data. To avoid the overfitting in the model, the fed of training data can be stopped at an early stage, due to which the model may not learn enough from the training data. As a result, it may fail to find the best fit of the dominant trend in the data.</p>
+        <br>
+        <br>
+        <p>In the case of underfitting, the model is not able to learn enough from the training data, and hence it reduces the accuracy and produces unreliable predictions.</p>
+        <br>
+        <br>
+        <p>An underfitted model has high bias and low variance.</p>
+        <i>Example:</i><p>We can understand the underfitting using below output of the linear regression model:</p>
+        <img src="https://static.javatpoint.com/tutorial/machine-learning/images/overfitting-and-underfitting2.png">
+        <p>As we can see from the above diagram, the model is unable to capture the data points present in the plot.</p>
+        <h3>How to avoid Underfitting</h3>
+        <ul>
+            <li>
+                By increasing the training time of the model
+            </li>
+            <li>
+                By increasing the number of features.
+            </li>
+        </ul>
+    </div>
+    <div id="bias">
+        <h2>Bias-Variance Tradeoff</h2>
+    </div>
+    <div class="para11">
+        <p>For any model, we have to find the perfect balance between Bias and Variance. This just ensures that we capture the essential patterns in our model while ignoring the noise present it in. This is called Bias-Variance Tradeoff. It helps optimize the error in our model and keeps it as low as possible. </p>
+        <br>
+        <p>An optimized model will be sensitive to the patterns in our data, but at the same time will be able to generalize to new data. In this, both the bias and variance should be low so as to prevent overfitting and underfitting.
+        </p>
+        <figure>
+            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/7-bullseye.JPG" alt="BUll's Eye graph for bias and variance" style="width:100%">
+            <figcaption> Bull’s Eye Graph for Bias and Variance</figcaption>
+          </figure>
+        <p>The above bull’s eye graph helps explain bias and variance tradeoff better. The best fit is when the data is concentrated in the center, ie: at the bull’s eye. We can see that as we get farther and farther away from the center, the error increases in our model. The best model is one where bias and variance are both low.</p>
+    </div>
 </div>
     </body>
 </html>
