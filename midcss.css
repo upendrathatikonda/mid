@@ -7,7 +7,7 @@
     background-color: rgba(21,201,201,0.9);  
     font-size:2rem;
 }
-#iotdef, #physicaldesign , #sensors, #mqtt, #coap,#inputbuffer,#phase,#roc,#bias,#overfitting,#underfitting{
+#iotdef, #physicaldesign , #sensors, #mqtt, #coap,#inputbuffer,#phase,#roc,#bias,#overfitting,#underfitting,#kfold,#mental,#pt,#versus,#consequences,#dfs{
     display: none;
     color:aliceblue;
     text-shadow: 2px 1px 5px black;
@@ -16,10 +16,9 @@
     font-style: italic ;
     font-stretch: expanded;
 }
-.para1 ,.para2, .para3, .para4, .para5,.para6,.para7,.para8,.para9,.para10,.para11{
+.para1 ,.para2, .para3, .para4, .para5,.para6,.para7,.para17,.para8,.para9,.para10,.para11,.para12,.para13,.para14,.para15,.para16{
     display: none;
     color:ivory;
     background-color:rgba(20,5,8,0.4);
     text-align: center;
 }
-
